@@ -6,12 +6,8 @@
     <title>Bangla Speech To Text</title>
     <link rel="stylesheet" href="style.css">
 </head>
-    <div class="brand">
-    <img src="LOGO.png" alt="Mihran STT Logo" style="width: 24px; height: 24px; object-fit: contain; border-radius: 4px;">
-    </div>
 <body>
 
-    <!-- 1. INITIAL LOGIN OVERLAY WITH USERNAME OPTION -->
     <div id="login-overlay" class="login-overlay">
         <div class="login-card">
             <h2>Voice Workspace</h2>
@@ -23,14 +19,13 @@
         </div>
     </div>
 
-    <!-- 2. MAIN APP INTERFACE -->
     <div id="app-container" class="main-layout hidden">
         
-        <!-- LEFT SIDEBAR DESIGN -->
         <aside class="sidebar">
             <div class="sidebar-top">
                 <div class="brand">
-                    <span class="brand-dot"></span> Mihran STT
+                    <img src="LOGO.png" alt="Mihran STT Logo" style="width: 24px; height: 24px; object-fit: contain; border-radius: 4px;"> 
+                    Mihran STT
                 </div>
                 <button class="new-session-btn">
                     + New Session
@@ -44,7 +39,6 @@
             </div>
         </aside>
 
-        <!-- MAIN DASHBOARD CONTENT -->
         <main class="workspace">
             <header class="workspace-header">
                 <div class="header-left">
@@ -55,13 +49,10 @@
             </header>
 
             <section class="content-area">
-                <!-- STRUCTURED TEXT PANEL -->
                 <div class="editor-container">
-                    <!-- Note: Removed readonly so you can press Enter or type inside if needed -->
                     <textarea id="text-output" placeholder="Your spoken Bengali transcript will generate here in real-time..."></textarea>
                 </div>
                 
-                <!-- CONTROL PANEL DECK -->
                 <div class="control-panel">
                     <button id="record-btn" class="panel-btn btn-record" title="Start Recording">
                         🎤 Start Recording
@@ -81,7 +72,6 @@
         </main>
     </div>
 
-    <!-- Custom Right-Click Context Menu -->
     <div id="custom-menu" class="context-menu">
         <div id="edit-word-option" class="menu-item">🎤 Replace Word by Voice</div>
     </div>
